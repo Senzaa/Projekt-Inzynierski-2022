@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="PISilnik.Base.BasicMesh" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="13.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>gEQAAgAAICAAACAAAAAAICQMAACEAAAAAAAAAIAEABA=</HashCode>
+      <FileName>Base\BasicMesh.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.108" />
+  </Class>
+  <Class Name="PISilnik.Base.ObjectsQueue">
+    <Position X="13.25" Y="4.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAFAUAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Base\ObjectsQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Base.Physics.Physics">
+    <Position X="30.5" Y="2" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAAgAAAKAQIYAgAAQBAAAAEAAAAIBAAABIAAAAA=</HashCode>
+      <FileName>Base\Physics\Physics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Base.Physics.PhysicsExtensions">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Physics\PhysicsExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Helper.WavefrontOBJ">
+    <Position X="49.5" Y="14" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\WavefrontOBJ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Rendering.Generators.PerlinNoise">
+    <Position X="21.5" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAABAAAAAAAAABAAAAIAAAAAAgEAAAAAAAAA=</HashCode>
+      <FileName>Rendering\Generators\PerlinNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Rendering.Camera">
+    <Position X="2" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAEQACAAAABAEgAgAAgAAAICAAAQgAIADAAIEAQBI=</HashCode>
+      <FileName>Rendering\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Rendering.Shader">
+    <Position X="12.75" Y="10" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAIAAgAMAAAAAAAAAAAEAAYSJAgAAAAAAAA=</HashCode>
+      <FileName>Rendering\Shader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Rendering.Texture">
+    <Position X="21.5" Y="6.5" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAIAAIBAEAAAAEEAAIAAAAAAAAAEBA=</HashCode>
+      <FileName>Rendering\Texture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Tests.ArraySpeedTests">
+    <Position X="18" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\ArraySpeedTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.Engine">
+    <Position X="2" Y="0.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAgAAAQAAAAAAAIAAAAAAAAAAABAAAIAAAAI=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PISilnik.EngineGameWindow">
+    <Position X="7.75" Y="0.75" Width="8" />
+    <TypeIdentifier>
+      <HashCode>CAABAAAAACAAAAAAQAAAAAACAAAAACAAAAAAAAAQAAA=</HashCode>
+      <FileName>EngineGameWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="PISilnik.Base.Interfaces.GeometricVertex">
+    <Position X="46" Y="25.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAYAE=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.TextureCoordinate">
+    <Position X="48.5" Y="25.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAYAA=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.NormalVertex">
+    <Position X="43.5" Y="25.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAYAE=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.Vertex">
+    <Position X="43.5" Y="23.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.Material">
+    <Position X="35" Y="4.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.PolygonalFace">
+    <Position X="44.5" Y="21" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAEAAAA=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Interfaces.PolygonGroup">
+    <Position X="45.5" Y="19" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PISilnik.Base.Physics.DefaultPoseIntegratorCallbacks" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="7" Width="13.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAQAQAAAAABARAACABAAAAAIAABAAAAA=</HashCode>
+      <FileName>Base\Physics\PhysicsCallbacks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="PISilnik.Base.Physics.DefaultNarrowPhaseCallbacks" BaseTypeListCollapsed="true">
+    <Position X="24" Y="15.75" Width="9" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAAACEAAAAAAAAAAAACAAAAQEAAA=</HashCode>
+      <FileName>Base\Physics\PhysicsCallbacks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Interface Name="PISilnik.Base.IObjectsMaster">
+    <Position X="7.75" Y="4.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Base\Abstract\IObjectsMaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PISilnik.Base.Interfaces.IBasicObject">
+    <Position X="5.75" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>Base\Interfaces\IBasicObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PISilnik.Base.Interfaces.IMesh">
+    <Position X="40.25" Y="14.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAIAAAACAAAAAAICQMAACEAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Base\Interfaces\IMesh.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PISilnik.Base.Physics.Interfaces.IPhysicsObject">
+    <Position X="5.75" Y="14.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Physics\Interfaces\IPhysicsObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PISilnik.Base.Physics.Interfaces.IStaticPhysicsObject">
+    <Position X="8.75" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Physics\Interfaces\IPhysicsObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PISilnik.Rendering.Interfaces.IRenderable">
+    <Position X="8.75" Y="11.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAQBAgAgAAAA=</HashCode>
+      <FileName>Rendering\Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

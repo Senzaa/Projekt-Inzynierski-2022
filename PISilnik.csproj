@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>PISilnik</RootNamespace>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	<DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bepuphysics2\**" />
+    <EmbeddedResource Remove="bepuphysics2\**" />
+    <None Remove="bepuphysics2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepuPhysics" Version="2.4.0" />
+    <PackageReference Include="OpenTK" Version="4.7.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Builtin\BasicCubeFace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\SimpleCube.mtl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\SimpleCube.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\SimpleSphere.mtl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\SimpleSphere.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\Sphere.mtl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Meshes\Sphere.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Diffuse.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Diffuse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Normal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Normal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Specular.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleCube_Specular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Diffuse.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Diffuse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Normal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Normal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Specular.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Builtin\Textures\SimpleSphere_Specular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Shaders\BasicShader\BasicShader.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Shaders\BasicShader\BasicShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
