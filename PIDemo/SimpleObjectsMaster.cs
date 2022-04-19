@@ -13,6 +13,7 @@ using PISilnik.Rendering.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Vector3 = System.Numerics.Vector3;
 
 namespace PIDemo
@@ -95,6 +96,10 @@ namespace PIDemo
                         basicObject.PhysicsBody.Pose.Position.Z
                     )
                     );
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                {
+                    throw new Exception("Linux Test: " + basicObject.Mesh.Materials.Count);
+                }
                 Shader.BasicShader.SetFloat("shininess", basicObject.Mesh.Materials["Material"].Shininess/10);
                 basicObject.Mesh.Use();
 
