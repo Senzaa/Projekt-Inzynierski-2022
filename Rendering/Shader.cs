@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,11 +17,14 @@ namespace PISilnik.Rendering
         private readonly Dictionary<string, int> _uniformLocations = new();
 
         private static readonly char PathSep = Path.DirectorySeparatorChar;
+        private static readonly string RootDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty;
+
         public static readonly Shader BasicShader = new(
-            $"Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.vert",
-            $"Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.frag"
+            $"{RootDir + PathSep}Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.vert",
+            $"{RootDir + PathSep}Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.frag"
             );
-        public Shader() { }
+        public Shader() {
+        }
         public Shader(string vertPath, string fragPath, string geomPath = "")
         {
             string shaderSource = File.ReadAllText(vertPath);
