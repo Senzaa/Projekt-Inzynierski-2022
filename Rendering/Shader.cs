@@ -15,9 +15,10 @@ namespace PISilnik.Rendering
 
         private readonly Dictionary<string, int> _uniformLocations = new();
 
+        private static readonly char PathSep = Path.DirectorySeparatorChar;
         public static readonly Shader BasicShader = new(
-            "Resources\\Shaders\\BasicShader\\BasicShader.vert",
-            "Resources\\Shaders\\BasicShader\\BasicShader.frag"
+            $"Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.vert",
+            $"Resources{PathSep}Shaders{PathSep}BasicShader{PathSep}BasicShader.frag"
             );
         public Shader() { }
         public Shader(string vertPath, string fragPath, string geomPath = "")

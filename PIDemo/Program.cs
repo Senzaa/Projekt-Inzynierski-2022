@@ -8,6 +8,7 @@ using SixLabors.ImageSharp.ColorSpaces;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Numerics;
 using System.Runtime.InteropServices;
 
@@ -17,6 +18,8 @@ namespace PIDemo
     {
         //[DllImport("kernel32")]
         //static extern bool AllocConsole();
+
+        private static readonly char PathSep = Path.DirectorySeparatorChar;
 
         public static Texture[] CubeTextures { get; private set; }
         public static Texture[] SphereTextures { get; private set; }
@@ -46,23 +49,23 @@ namespace PIDemo
             {
                 try
                 {
-                    MeshBank.Add("SimpleCube", new WavefrontOBJ(@"Resources\Builtin\Meshes\SimpleCube.obj").Meshes[0]);
-                    MeshBank.Add("SimpleSphere", new WavefrontOBJ(@"Resources\Builtin\Meshes\SimpleSphere.obj").Meshes[0]);
+                    MeshBank.Add("SimpleCube", new WavefrontOBJ($"Resources{PathSep}Builtin{PathSep}Meshes{PathSep}SimpleCube.obj").Meshes[0]);
+                    MeshBank.Add("SimpleSphere", new WavefrontOBJ($"Resources{PathSep}Builtin{PathSep}Meshes{PathSep}SimpleSphere.obj").Meshes[0]);
 
                     CubeTextures =
                         new Texture[3]
                         {
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleCube_Diffuse.png"),
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleCube_Normal.png"),
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleCube_Specular.png")
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleCube_Diffuse.png"),
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleCube_Normal.png"),
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleCube_Specular.png")
                         };
 
                     SphereTextures =
                         new Texture[]
                         {
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleSphere_Diffuse.png"),
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleSphere_Normal.png"),
-                            Texture.LoadFromFile(@"Resources\Builtin\Textures\SimpleSphere_Specular.png")
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleSphere_Diffuse.png"),
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleSphere_Normal.png"),
+                            Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}SimpleSphere_Specular.png")
                         };
 
                     Engine.MainCamera.Fov = 70;
@@ -74,7 +77,7 @@ namespace PIDemo
                         ground.Mesh = MeshBank["SimpleCube"].Clone();
                         ground.Mesh.Name = "GroundMesh";
 
-                        Texture gpTexDiffuse = Texture.Empty(512, 512); //Texture.LoadFromFile(@"Resources\Builtin\Textures\Grass.jpg");
+                        Texture gpTexDiffuse = Texture.Empty(512, 512); //Texture.LoadFromFile($"Resources{PathSep}Builtin{PathSep}Textures{PathSep}Grass.jpg");
                         Texture gpTexSpecular = Texture.Empty(512, 512);
 
                         float[] perlinMap = Texture.GeneratePerlinMap(
