@@ -170,7 +170,7 @@ namespace PIDemo
                 Engine.Run();
             } catch (Exception ex)
             {
-                Console.WriteLine($"An error occured during runtime:\n{ex}");
+                Console.WriteLine($"An error occured during runtime:{Environment.NewLine}{ex}");
             }
 
             Console.WriteLine("Exiting Demo Application");

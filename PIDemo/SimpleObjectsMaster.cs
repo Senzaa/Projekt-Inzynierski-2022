@@ -98,7 +98,11 @@ namespace PIDemo
                     );
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
                 {
-                    throw new Exception("Linux Test: " + basicObject.Mesh.Materials.Count);
+                    throw new Exception("Linux Test 2:" + Environment.NewLine +
+                        $"Mesh Name: {basicObject.Mesh.Name}" + Environment.NewLine +
+                        $"Mesh EVC: {basicObject.Mesh.ElementVerticesCount}" + Environment.NewLine +
+                        $"Mesh Polygon Groups: {basicObject.Mesh.PolygonGroups.Count}" + Environment.NewLine
+                        );
                 }
                 Shader.BasicShader.SetFloat("shininess", basicObject.Mesh.Materials["Material"].Shininess/10);
                 basicObject.Mesh.Use();

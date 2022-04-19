@@ -101,14 +101,14 @@ namespace PISilnik.Tests
                 }
             }
 
-            Debug.WriteLine($"\nAverage results for {testNum} integers ({trials} trials performed):\n");
+            Debug.WriteLine($"{Environment.NewLine}Average results for {testNum} integers ({trials} trials performed):{Environment.NewLine}");
             Debug.WriteLine($"Array/for: {(float)Results1.Sum() / (float)Results1.Count:0.00}ms average");
             Debug.WriteLine($"Array/for (cached length): {(float)Results5.Sum() / (float)Results5.Count:0.00}ms average");
-            Debug.WriteLine($"Array/foreach: {(float)Results2.Sum() / (float)Results2.Count:0.00}ms average\n");
+            Debug.WriteLine($"Array/foreach: {(float)Results2.Sum() / (float)Results2.Count:0.00}ms average{Environment.NewLine}");
             Debug.WriteLine($"List/for: {(float)Results3.Sum() / (float)Results3.Count:0.00}ms average");
             Debug.WriteLine($"List/for (cached count): {(float)Results6.Sum() / (float)Results6.Count:0.00}ms average");
             Debug.WriteLine($"List/foreach: {(float)Results4.Sum() / (float)Results4.Count:0.00}ms average");
-            Debug.WriteLine("\n------------------------------------------");
+            Debug.WriteLine($"{Environment.NewLine}------------------------------------------");
         }
     }
 }

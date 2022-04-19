@@ -61,7 +61,7 @@ namespace PISilnik
                     MainCamera = new(Vector3.UnitZ * 3, GameWindow.Size.X / (float)GameWindow.Size.Y);
                 } catch (Exception ex)
                 {
-                    Debug.WriteLine($"Failed to initialize Game Window:\n{ex}");
+                    Debug.WriteLine($"Failed to initialize Game Window:{Environment.NewLine}{ex}");
                     throw;
                 }
             } else

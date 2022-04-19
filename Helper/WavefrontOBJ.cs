@@ -190,7 +190,7 @@ namespace PISilnik.Helper
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine($"Failed to read data from line:\n{line}\nError message:\n{ex}");
+                    Debug.WriteLine($"Failed to read data from line:{Environment.NewLine}{line}{Environment.NewLine}Error message:{Environment.NewLine}{ex}");
                 }
             }
 

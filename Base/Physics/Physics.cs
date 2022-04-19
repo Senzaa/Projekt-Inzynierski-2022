@@ -60,7 +60,7 @@ namespace PISilnik.Base.Physics
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception($"Failed to initialize physics engine:\n{ex}");
+                    throw new Exception($"Failed to initialize physics engine:{Environment.NewLine}{ex}");
                 }
             }
             else

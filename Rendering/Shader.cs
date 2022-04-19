@@ -85,7 +85,7 @@ namespace PISilnik.Rendering
 
             GL.GetShader(shader, ShaderParameter.CompileStatus, out var code);
             if (code != (int)All.True)
-                throw new Exception($"Error occurred whilst compiling Shader({shader}):\n{GL.GetShaderInfoLog(shader)}");
+                throw new Exception($"Error occurred whilst compiling Shader({shader}):{Environment.NewLine}{GL.GetShaderInfoLog(shader)}");
         }
 
         private static void LinkProgram(int program)
@@ -93,7 +93,7 @@ namespace PISilnik.Rendering
             GL.LinkProgram(program);
             GL.GetProgram(program, GetProgramParameterName.LinkStatus, out var code);
             if (code != (int)All.True)
-                throw new Exception($"Error occurred whilst linking Program({program}:\n{GL.GetProgramInfoLog(program)})");
+                throw new Exception($"Error occurred whilst linking Program({program}:{Environment.NewLine}{GL.GetProgramInfoLog(program)})");
         }
         public void Use()
             => GL.UseProgram(Handle);
