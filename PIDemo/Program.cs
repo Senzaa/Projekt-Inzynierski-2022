@@ -15,8 +15,8 @@ namespace PIDemo
 {
     public class Program
     {
-        [DllImport("kernel32")]
-        static extern bool AllocConsole();
+        //[DllImport("kernel32")]
+        //static extern bool AllocConsole();
 
         public static Texture[] CubeTextures { get; private set; }
         public static Texture[] SphereTextures { get; private set; }
@@ -25,7 +25,7 @@ namespace PIDemo
 
         static void Main(string[] args)
         {
-            AllocConsole();
+            //AllocConsole();
             Console.WriteLine("Initializing Demo Window...");
 
             //Physics.Gravity = new(0f, -9.7f, 0);
