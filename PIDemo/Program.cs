@@ -136,8 +136,8 @@ namespace PIDemo
 
                     Physics.Running = false;
 
-                    const int sizeX = 100;
-                    const int sizeY = 100;
+                    const int sizeX = 50;
+                    const int sizeY = 50;
                     for (int iy = 0; iy < sizeY; iy++)
                     {
                         for (int ix = 0; ix < sizeX; ix++)

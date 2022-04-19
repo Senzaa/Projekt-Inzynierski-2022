@@ -22,7 +22,7 @@ namespace PISilnik.Helper
         {
             OBJFilePath = objFilePath;
 
-            MTLFilePath = $@"{Directory.GetParent(OBJFilePath)}\{
+            MTLFilePath = @$"{Directory.GetParent(OBJFilePath)}{Path.DirectorySeparatorChar}{
                 File.ReadLines(OBJFilePath)
                 .FirstOrDefault(line => line.StartsWith("mtllib "))
                 ?[7..] ?? Path.GetFileNameWithoutExtension(OBJFilePath) + ".mtl"
