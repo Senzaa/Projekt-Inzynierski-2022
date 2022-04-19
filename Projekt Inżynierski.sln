@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PISilnik", "PISilnik.csproj", "{6454948D-17C3-4228-88EA-571D576D1E76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PIDemo", "..\PIDemo\PIDemo.csproj", "{3FD12C05-265F-4AC6-AD20-6B2DDFDE3369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PIDemo", "PIDemo\PIDemo.csproj", "{0EE1478B-530F-495D-8714-6F0B366D337E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6454948D-17C3-4228-88EA-571D576D1E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6454948D-17C3-4228-88EA-571D576D1E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6454948D-17C3-4228-88EA-571D576D1E76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FD12C05-265F-4AC6-AD20-6B2DDFDE3369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FD12C05-265F-4AC6-AD20-6B2DDFDE3369}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FD12C05-265F-4AC6-AD20-6B2DDFDE3369}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FD12C05-265F-4AC6-AD20-6B2DDFDE3369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE1478B-530F-495D-8714-6F0B366D337E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE1478B-530F-495D-8714-6F0B366D337E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE1478B-530F-495D-8714-6F0B366D337E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE1478B-530F-495D-8714-6F0B366D337E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

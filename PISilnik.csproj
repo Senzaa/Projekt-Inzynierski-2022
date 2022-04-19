@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -19,8 +19,11 @@
 
   <ItemGroup>
     <Compile Remove="bepuphysics2\**" />
+    <Compile Remove="PIDemo\**" />
     <EmbeddedResource Remove="bepuphysics2\**" />
+    <EmbeddedResource Remove="PIDemo\**" />
     <None Remove="bepuphysics2\**" />
+    <None Remove="PIDemo\**" />
   </ItemGroup>
 
   <ItemGroup>
