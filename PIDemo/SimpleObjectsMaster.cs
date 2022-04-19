@@ -95,7 +95,7 @@ namespace PIDemo
                         basicObject.PhysicsBody.Pose.Position.Y,
                         basicObject.PhysicsBody.Pose.Position.Z
                     )
-                    );
+                );
 
                 Shader.BasicShader.SetFloat("shininess", basicObject.Mesh.Materials["Material"].Shininess/10);
                 basicObject.Mesh.Use();
